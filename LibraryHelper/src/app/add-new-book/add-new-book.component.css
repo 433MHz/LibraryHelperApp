@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-size: 1.3rem;
+    margin: auto;
+    margin-top: 5vh;
+    background-color: var(--back-layout-gray);
+    padding: 1rem;
+
+    border: 20px solid var(--back-layout-extraDarkGray);
+    border-radius: 2rem;
+}
+
+.container input{
+    height: 2rem;
+    font-size: 1.5rem;
+}
+
+.container button{
+    height: 2rem;
+    margin-top: 1rem;
+    background-color: var(--back-layout-extraDarkGray);
+    border: none;
+    border-radius: 2rem;
+}
+
+.container button:hover{
+    cursor: pointer;
+    background-color: lightgray;
+    
+}

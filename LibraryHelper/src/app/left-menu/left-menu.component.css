@@ -1,0 +1,52 @@
+.leftMenu{
+    width: 15vw;
+    height: 90vh;
+    margin-top: 5vh;
+    margin-left: 5vh;
+    padding-top: 2rem;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leftMenu h3{
+    margin-bottom: .5rem;
+}
+
+.leftMenu ul{
+    margin-top: 1rem;
+    padding: 1rem;
+    border-bottom: 2px solid var(--back-layout-darkGray);
+}
+
+.leftMenu ul:last-child{
+    border: none;
+}
+
+.leftMenu ul h3{
+    font-size: 1.3rem;
+}
+
+.leftMenu li{
+    list-style: none;
+    margin: .5rem 0;
+}
+.leftMenu ul li button{
+    width: 10vw;
+    height: 3rem;
+    background-color: var(--back-layout-extraDarkGray);
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+}
+
+.leftMenu ul li button:focus{
+    border: none;
+}
+
+.leftMenu ul li button:hover{
+    cursor: pointer;
+    background-color: var(--back-layout-gray);
+} 

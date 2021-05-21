@@ -1,0 +1,32 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    z-index: 1;
+}
+
+.topPart{
+    background-color: var(--back-layout-blue);
+    height: 30vh;
+    width: 100%;
+}
+
+.bottomPart{
+    background-color: var(--back-layout-gray);
+    width: 100%;
+    height: 70vh;
+} 
+
+.containerAbsolut{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+}
+
+.containerAbsolut-content{
+    width: 77.5vw;
+    height: 90vh;
+    margin-top: 5vh;
+    margin-left: 2.5vw;
+}
