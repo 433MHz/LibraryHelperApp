@@ -1,5 +1,5 @@
 .leftMenu{
-    width: 15vw;
+    width: 20vw;
     height: 90vh;
     margin-top: 5vh;
     margin-left: 5vh;
@@ -9,6 +9,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    border:  solid 20px var(--back-layout-extraDarkGray);
+    border-radius: 2rem;
 }
 
 .leftMenu h3{

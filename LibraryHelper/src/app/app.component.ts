@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'LibraryHelper';
+
+  addNewBookActive = false;
+
+  setNewBookActivity(event: boolean){
+    this.addNewBookActive = event;
+  }
 }

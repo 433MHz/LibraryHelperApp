@@ -4,8 +4,11 @@
 </div>
 
 <div class="containerAbsolut"> 
-  <app-left-menu></app-left-menu>
+  <app-left-menu (addNewBookStatus) = 'setNewBookActivity($event)'></app-left-menu>
   <div class="containerAbsolut-content">
-    <app-add-new-book></app-add-new-book>
+    <app-add-new-book *ngIf='addNewBookActive'></app-add-new-book>
+    <!-- <app-find-book></app-find-book> -->
+    <!-- <app-add-new-user></app-add-new-user> -->
+    <app-find-user></app-find-user>
   </div>
 </div>
