@@ -8,9 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'LibraryHelper';
 
-  addNewBookActive = false;
+  componentsStatus:{addNewBookComponent: boolean, findBookComponent: boolean, addNewUserComponent: boolean, findUserComponent:boolean, settingsComponent:boolean};
 
-  setNewBookActivity(event: boolean){
-    this.addNewBookActive = event;
+
+  setNewComponentsStatus(event: {addNewBookComponent: boolean, findBookComponent: boolean, addNewUserComponent: boolean, findUserComponent:boolean, settingsComponent:boolean}){
+    this.componentsStatus = event;
   }
 }

@@ -25,8 +25,12 @@
 }
 
 .containerAbsolut-content{
-    width: 77.5vw;
+    width: 70vw;
     height: 90vh;
     margin-top: 5vh;
     margin-left: 2.5vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
 }

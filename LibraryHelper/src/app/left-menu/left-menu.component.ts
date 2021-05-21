@@ -12,12 +12,37 @@ export class LeftMenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  @Output() addNewBookStatus = new EventEmitter<boolean>();
-  newBook = false;
+  @Output() componentsStatusInfo = new EventEmitter<object>();
 
-  makeAddNewBookActive(){
-    this.addNewBookStatus.emit(this.newBook);
-    this.newBook = !this.newBook
+  componentsStatus = {addNewBookComponent: false, findBookComponent: false, addNewUserComponent: false, findUserComponent:false, settingsComponent:false};
+
+  changeAddNewBookComponent(){
+    this.componentsStatus.addNewBookComponent = !this.componentsStatus.addNewBookComponent;
+    this.emitComponentsStatus()
+  }
+
+  changeFindBookComponent(){
+    this.componentsStatus.findBookComponent = !this.componentsStatus.findBookComponent;
+    this.emitComponentsStatus()
+  }
+
+  changeAddNewUserComponent(){
+    this.componentsStatus.addNewUserComponent = !this.componentsStatus.addNewUserComponent;
+    this.emitComponentsStatus()
+  }
+
+  changeFindUserComponent(){
+    this.componentsStatus.findUserComponent = !this.componentsStatus.findUserComponent;
+    this.emitComponentsStatus()
+  }
+
+  changeSettingsComponent(){
+    this.componentsStatus.addNewBookComponent = !this.componentsStatus.addNewBookComponent;
+    this.emitComponentsStatus()
+  }
+
+  emitComponentsStatus(){
+    this.componentsStatusInfo.emit(this.componentsStatus);
   }
 
 }

@@ -1,9 +1,8 @@
 .container{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 100%;
     font-size: 1.3rem;
-    margin-top: 5vh;
     background-color: var(--back-layout-gray);
     padding: 1rem;
 

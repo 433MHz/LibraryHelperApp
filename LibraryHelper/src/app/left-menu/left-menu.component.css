@@ -53,3 +53,10 @@
     cursor: pointer;
     background-color: var(--back-layout-gray);
 } 
+
+
+
+.selectedClass{
+    background-color: #8F9092 !important;
+    color: white;
+}
