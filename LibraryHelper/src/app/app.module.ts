@@ -3,11 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LeftMenuComponent } from './left-menu/left-menu.component';
-import { AddNewBookComponent } from './add-new-book/add-new-book.component';
-import { FindBookComponent } from './find-book/find-book.component';
-import { FindUserComponent } from './find-user/find-user.component';
-import { AddNewUserComponent } from './add-new-user/add-new-user.component';
+import { LeftMenuComponent } from './Components/left-menu/left-menu.component';
+import { AddNewBookComponent } from './Components/add-new-book/add-new-book.component';
+import { FindBookComponent } from './Components/find-book/find-book.component';
+import { FindUserComponent } from './Components/find-user/find-user.component';
+import { AddNewUserComponent } from './Components/add-new-user/add-new-user.component';
 
 @NgModule({
   declarations: [

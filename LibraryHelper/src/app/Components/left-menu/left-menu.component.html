@@ -1,0 +1,21 @@
+<div class="leftMenu">
+  <h2>Name and lastname</h2>
+  <p>Job title</p>
+
+  <ul>
+      <li><h3>Books</h3></li>
+      <li><button (click) = "changeActualComponent(2)" [ngClass] = "activeComponent === findBookNumber ? 'selectedClass' : ''">Find Book</button></li>
+      <li><button (click) = "changeActualComponent(1)" [ngClass] = "activeComponent === addNewBookNumber ? 'selectedClass' : ''">Add New Book</button></li>
+  </ul>
+
+  <ul>
+      <li><h3>Users</h3></li>
+      <li><button (click) = "changeActualComponent(4)" [ngClass] = "activeComponent === findUserNumber ? 'selectedClass' : ''">Find User</button></li>
+      <li><button (click) = "changeActualComponent(3)" [ngClass] = "activeComponent === addNewUserNumber ? 'selectedClass' : ''">Add New User</button></li>
+  </ul>
+  
+  <ul>
+      <li><button (click) = "changeActualComponent(5)" [ngClass] = "activeComponent === settingsNumber ? 'selectedClass' : ''">Settings</button></li>
+      <li><button>Logout</button></li>
+  </ul>
+</div>

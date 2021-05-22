@@ -6,9 +6,9 @@
 <div class="containerAbsolut"> 
   <app-left-menu (componentsStatusInfo) = 'setNewComponentsStatus($event)'></app-left-menu>
   <div class="containerAbsolut-content">
-    <app-add-new-book *ngIf='componentsStatus.addNewBookComponent'></app-add-new-book>
-    <app-find-book *ngIf='componentsStatus.findBookComponent'></app-find-book>
-    <app-add-new-user *ngIf='componentsStatus.addNewUserComponent'></app-add-new-user>
-    <app-find-user *ngIf='componentsStatus.findUserComponent'></app-find-user>
+      <app-add-new-book *ngIf='actualComponentNumber === addNewBookNumber'></app-add-new-book>
+      <app-find-book *ngIf='actualComponentNumber === findBookNumber'></app-find-book>
+      <app-add-new-user *ngIf='actualComponentNumber === addNewUserNumber'></app-add-new-user>
+      <app-find-user *ngIf='actualComponentNumber === findUserNumber'></app-find-user>
   </div>
 </div>

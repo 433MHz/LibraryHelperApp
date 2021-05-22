@@ -8,10 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'LibraryHelper';
 
-  componentsStatus:{addNewBookComponent: boolean, findBookComponent: boolean, addNewUserComponent: boolean, findUserComponent:boolean, settingsComponent:boolean};
+  actualComponentNumber: number;
 
+  addNewBookNumber = 1;
+  findBookNumber = 2;
+  addNewUserNumber = 3;
+  findUserNumber = 4;
+  settingsNumber = 5;
 
-  setNewComponentsStatus(event: {addNewBookComponent: boolean, findBookComponent: boolean, addNewUserComponent: boolean, findUserComponent:boolean, settingsComponent:boolean}){
-    this.componentsStatus = event;
+  setNewComponentsStatus(numberToSet){
+    this.actualComponentNumber = numberToSet;
   }
 }
